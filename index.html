@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bounty Farms | Animal Republic | Quality Meats in Nigeria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero-section {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1480&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .meat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    .meat-card {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+  <!-- Header -->
+  <header class="bg-green-800 text-white shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-paw text-2xl"></i>
+        <h1 class="text-xl md:text-2xl font-bold">
+          <span class="text-yellow-300">Bounty</span> Farms
+          <span class="text-sm block md:inline md:ml-2">(Animal Republic)</span>
+        </h1>
+      </div>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="hover:text-yellow-300 transition">Home</a>
+        <a href="#products" class="hover:text-yellow-300 transition">Products</a>
+        <a href="#about" class="hover:text-yellow-300 transition">About Us</a>
+        <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+      </nav>
+      <button class="md:hidden text-xl" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+    <div class="md:hidden hidden bg-green-700 py-2 px-4" id="mobile-menu">
+      <a href="#home" class="block py-2 hover:text-yellow-300 transition">Home</a>
+      <a href="#products" class="block py-2 hover:text-yellow-300 transition">Products</a>
+      <a href="#about" class="block py-2 hover:text-yellow-300 transition">About Us</a>
+      <a href="#contact" class="block py-2 hover:text-yellow-300 transition">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section text-white py-20 md:py-32">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">Find Affordable Healthy Meat You Love</h1>
+      <p class="text-xl md:text-2xl mb-8">The soft, delicious meat you crave on your food</p>
+      <div class="bg-yellow-400 text-green-900 font-bold text-lg md:text-xl px-6 py-3 rounded-full inline-block">
+        <i class="fas fa-phone-alt mr-2"></i> 08033683492 (WhatsApp)
+      </div>
+      <p class="mt-6 text-lg">We're only a text away!</p>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section id="products" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Our Premium Products</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <!-- Eggs -->
+        <div class="meat-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+          <img src="/image/hen-eggs.jpg" alt="Fresh Eggs" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-800 mb-2">Farm Fresh Eggs</h3>
+            <p class="text-gray-600 mb-4">Nutritious, organic eggs collected daily for your healthy meals.</p>
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">Order Now</button>
+          </div>
+        </div>
+
+        <!-- Whole Chicken -->
+        <div class="meat-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+          <img src="/image/raw-whole-chicken.jpg" alt="Fresh Chicken" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-800 mb-2">Farm Chicken</h3>
+            <p class="text-gray-600 mb-4">Free-range, hormone-free chickens raised with care.</p>
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">Order Now</button>
+          </div>
+        </div>
+
+        <!-- Chicken Parts -->
+        <div class="meat-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+          <img src="/image/download (3).jpeg" alt="Chicken Parts" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-green-800 mb-2">Chicken Parts</h3>
+            <p class="text-gray-600 mb-4">Clean, Chicken raised with care.</p>
+            <button class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800 transition">Order Now</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="text-center mt-12">
+        <a href="#contact" class="inline-block bg-yellow-400 text-green-900 font-bold px-8 py-3 rounded-full hover:bg-yellow-500 transition">
+          View All Products <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <div class="md:flex items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+          <h2 class="text-3xl font-bold text-green-800 mb-6">About Bounty Farms</h2>
+          <p class="text-gray-700 mb-4">
+            At Bounty Farms (Animal Republic), we believe that "You are what you eat." If you eat fish that consume maggots or excreta... what does that make you?
+          </p>
+          <p class="text-gray-700 mb-6">
+            We're committed to providing healthy, affordable meat products that nourish your body and delight your taste buds.
+          </p>
+          <div class="bg-green-800 text-white p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-2">Our Mission</h3>
+            <p class="mb-4">Service, Service, and more Services.</p>
+            <h3 class="text-xl font-bold mb-2">Our Vision</h3>
+            <p>To be the best service provider company with integrity in Nigeria.</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 text-center">
+        <h3 class="text-2xl font-bold text-green-800 mb-6">Bounty Farm Loves Your Success!</h3>
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+          We love to marry your business with our quality products. Partner with us today for consistent, premium supplies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-green-800 mb-12">What Our Customers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center text-xl font-bold mr-4">A</div>
+            <div>
+              <h4 class="font-bold">Adebayo Johnson</h4>
+              <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </div>
+          </div>
+          <p class="text-gray-700">"The eggs from Bounty Farms are always fresh! My family enjoys them every morning. Their service is excellent too."</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center text-xl font-bold mr-4">F</div>
+            <div>
+              <h4 class="font-bold">Funke Adeleke</h4>
+              <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+            </div>
+          </div>
+          <p class="text-gray-700">"I run a restaurant and Bounty Farms has been my reliable supplier for chicken and eggs. Consistent quality and fair prices."</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 rounded-full bg-green-700 text-white flex items-center justify-center text-xl font-bold mr-4">O</div>
+            <div>
+              <h4 class="font-bold">Oluwaseun Martins</h4>
+              <div class="flex text-yellow-400"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+               </div>
+          </div>
+          <p class="text-gray-700">"Their chicken is the best I've found in Lagos. You can taste that it's properly raised, not like some of the commercial poultry."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-green-800 text-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+      <div class="md:flex justify-between">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <h3 class="text-xl font-bold mb-4">Get In Touch</h3>
+
+
+           <p class="mb-6">We're here to serve you with quality products. Reach out via any of these channels:</p>
+          <div class="space-y-4">
+            <div class="flex items-start"><i class="fas fa-phone-alt mt-1 mr-4 text-yellow-300"></i><div><h4 class="font-bold">Phone/WhatsApp</h4><p>08033683492</p></div></div>
+            <div class="flex items-start"><i class="fas fa-envelope mt-1 mr-4 text-yellow-300"></i><div><h4 class="font-bold">Email</h4><p>info@bountyfarms.com</p></div></div>
+            <div class="flex items-start"><i class="fas fa-map-marker-alt mt-1 mr-4 text-yellow-300"></i><div><h4 class="font-bold">Location</h4><p>Ekiti, Nigeria</p></div></div>
+          </div>
+          <div class="mt-8 flex space-x-4">
+            <a href="#" class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-twitter"></i></a>
+            <a href="https://wa.me/2348033683492" class="w-10 h-10 rounded-full bg-green-700 flex items-center justify-center hover:bg-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="md:w-1/2 md:pl-8">
+          <h3 class="text-xl font-bold mb-4">Send Us a Message</h3>
+          <form class="space-y-4">
+            <div><label for="name" class="block mb-1">Name</label><input type="text" id="name" class="w-full px-4 py-2 rounded text-gray-800"></div>
+            <div><label for="email" class="block mb-1">Email</label><input type="email" id="email" class="w-full px-4 py-2 rounded text-gray-800"></div>
+            <div><label for="message" class="block mb-1">Message</label><textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800"></textarea></div>
+            <button type="submit" class="bg-yellow-400 text-green-900 font-bold px-6 py-2 rounded hover:bg-yellow-500 transition">Send Message <i class="fas fa-paper-plane ml-2"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-900 text-white py-8">
+    <div class="container mx-auto px-4">
+      <div class="md:flex justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <h2 class="text-2xl font-bold"><span class="text-yellow-300">Bounty</span> Farms <span class="text-sm">(Animal Republic)</span></h2>
+          <p class="mt-2">Quality meats for quality living</p>
+        </div>
+        <div class="text-center md:text-right">
+          <p>&copy; 2025 Bounty Farms. All rights reserved.</p>
+          <p class="mt-1">Designed with <i class="fas fa-heart text-red-400"></i> in Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
